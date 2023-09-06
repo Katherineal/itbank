@@ -1,0 +1,15 @@
+.Monedas{
+    display:block;
+    text-align: -webkit-center;
+    font-size: 20px;
+}
+.negrita{
+    font-style:initial;
+    font-weight: bold;
+    color: blue;
+}
+
+.datos{
+    text-decoration:solid;
+    font-weight: bold;
+}

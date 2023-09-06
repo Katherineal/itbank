@@ -1,0 +1,16 @@
+.ConvertirDe, .Cantidad {
+    display:block;
+    text-align: -webkit-center;
+    color: blue;
+
+}
+select {
+    height: 30px;
+    width: 60px;
+}
+
+#Cantidad{
+    width: 80px;
+    height: 30px;
+    text-decoration: black;
+}

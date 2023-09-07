@@ -12,7 +12,6 @@ import { FaRegUser,
     FaQuestion,
     FaMobileAlt,
     FaCircle,
-    FaFileAlt,
     FaInbox,
     FaDollarSign,
     FaHeadset,
@@ -23,9 +22,7 @@ import { FaRegUser,
     FaRegFile,
     FaLifeRing,
     FaShoppingBag,
-    FaStackExchange,
     FaExchangeAlt,
-    FaPenAlt,
     FaDownload,
     FaShieldAlt,
     FaRegMoneyBillAlt,
@@ -136,9 +133,6 @@ export function Icon({ className, dataTestId, onClick, style, type }) {
             }
             case "move":{
                 return <FaExchangeAlt />
-            }
-            case "edit":{
-                return <FaPenAlt />
             }
             case "download":{
                 return <FaDownload />

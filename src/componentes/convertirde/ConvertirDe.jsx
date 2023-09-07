@@ -18,26 +18,26 @@ function ConvertirDe({onMonedaDeSeleccionada, onCantidadCambiada}) {
 
 
   return (
-    <div>
-    <div className='Cantidad'>
-    <h3 id="LabelCant">Cantidad: </h3>
-    <input type="number" id="Cantidad" value={cantidad} onChange={handleCantidadChange}/>
-    </div>
-    <div className='ConvertirDe'>
-        <h3>Convertir De:</h3>
-        <select name="" value={monedaDe} onChange={handleMonedaDeChange}>
-            <option>ARS</option>
-            <option>USD</option>
-            <option>EUR</option>
-            <option>BRL</option>
-            <option>CNY</option>
-            <option>JPY</option>
-            <option>RUB</option>
-            <option>CLP</option>
-            <option>MXN</option>
-            <option>UYU</option>
-        </select>
-    </div>
+    <div className='containerConvertirDe'>
+      <div className='Cantidad'>
+        <h3 id="LabelCant">Cantidad: </h3>
+        <input type="number" id="Cantidad" value={cantidad} onChange={handleCantidadChange}/>
+      </div>
+      <div className='ConvertirDe'>
+          <h3>Convertir De:</h3>
+          <select name="" value={monedaDe} onChange={handleMonedaDeChange}>
+              <option>ARS</option>
+              <option>USD</option>
+              <option>EUR</option>
+              <option>BRL</option>
+              <option>CNY</option>
+              <option>JPY</option>
+              <option>RUB</option>
+              <option>CLP</option>
+              <option>MXN</option>
+              <option>UYU</option>
+          </select>
+      </div>
     </div>
   );
 }

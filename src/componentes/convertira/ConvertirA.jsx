@@ -12,7 +12,7 @@ function ConvertirA({onMonedaASeleccionada}) {
 
   return (
     <div className='ConvertirA'>
-         <h3>Convertir A:</h3>
+        <h3>Convertir A:</h3>
         <select name="" value={monedaA} onChange={handleMonedaAChange}>
         <option>ARS</option>
             <option>USD</option>

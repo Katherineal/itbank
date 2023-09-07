@@ -22,16 +22,19 @@ export function Transferencias() {
         setCantidad(nuevaCantidad);
     }
     return (
-            <div className='App'>
-                <ConvertirDe 
-                    onMonedaDeSeleccionada={handleMonedaDeChange}
-                    onCantidadCambiada={handleCantidadCambiada}
-                />
-                <ConvertirA 
-                    onMonedaASeleccionada={handleMonedaAChange}
-                    onCantidadCambiada={handleCantidadCambiada}
-                />
-                <Monedas  monedaDe={monedaDe} monedaA={monedaA} cantidad={cantidad}/>
+            <div className='containerTransferencias'>
+                <><div className='containerConversor'>
+                    <ConvertirDe
+                        onMonedaDeSeleccionada={handleMonedaDeChange}
+                        onCantidadCambiada={handleCantidadCambiada} />
+                    <ConvertirA
+                        onMonedaASeleccionada={handleMonedaAChange}
+                        onCantidadCambiada={handleCantidadCambiada} />
+                    <Monedas monedaDe={monedaDe} monedaA={monedaA} cantidad={cantidad} />
+                </div>
+                <div id='containerTransferenciasImg'>
+                    <img src="./fotos/credito.png" alt=""></img>
+                </div></>
             </div>
     )
 }

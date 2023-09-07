@@ -1,0 +1,11 @@
+.Resumenes{
+    align-items: center;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.1);
+    margin-top: 6rem;
+    height: 500px;
+}
+h3{
+    padding-top: 30px;
+    padding-right:3vh;
+}

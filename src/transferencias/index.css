@@ -1,10 +1,9 @@
 .containerTransferencias{
     width: 100%;
-    display: flex;
-    padding: 3rem;
     margin-bottom: 40px;
 }
 .containerConversor{
+    margin: 3rem;
     width: 50%;
     font-size: 20px;
     display: flex;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
+import Header from '../componentes/header/Header';
 
 function Prestamos() {
   const [resultado, setResultado] = useState({
@@ -27,6 +28,7 @@ function Prestamos() {
 
   return (
     <div>
+      <Header/>
       <div className="account-card">
         <h1>Calculadora de préstamos</h1>
         <form name="prestamo-form">

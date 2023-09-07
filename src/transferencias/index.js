@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import ConvertirDe from '../componentes/convertirde/ConvertirDe.jsx';
 import ConvertirA from '../componentes/convertira/ConvertirA.jsx';
 import Monedas from '../componentes/monedas/Monedas.jsx';
+import Header from '../componentes/header/Header';
 
 export function Transferencias() {
     const [monedaDe, setMonedaDe] = useState('');
@@ -23,6 +24,7 @@ export function Transferencias() {
     }
     return (
             <div className='containerTransferencias'>
+                <Header/>
                 <><div className='containerConversor'>
                     <ConvertirDe
                         onMonedaDeSeleccionada={handleMonedaDeChange}

@@ -1,10 +1,13 @@
 import './index.css';
 import Box from '../componentes/box/Box.js';
+import Header from '../componentes/header/Header';
+
 
 function Cuentas() {
 
   return (
     <div className="Cuentas">
+    <Header/>
       <>
   <section className="mainContent">
     <article>

@@ -27,7 +27,7 @@ function Prestamos() {
   };
 
   return (
-    <div>
+    <div >
       <Header/>
       <div className="account-card">
         <h1>Calculadora de préstamos</h1>

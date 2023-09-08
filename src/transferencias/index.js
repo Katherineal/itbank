@@ -10,7 +10,6 @@ export function Transferencias() {
     const [monedaA, setMonedaA] = useState('');
     const [cantidad, setCantidad] = useState(0);
 
-
     const handleMonedaDeChange = (moneda) => {
         setMonedaDe(moneda);
     };
@@ -25,18 +24,20 @@ export function Transferencias() {
     return (
             <div className='containerTransferencias'>
                 <Header/>
-                <><div className='containerConversor'>
-                    <ConvertirDe
-                        onMonedaDeSeleccionada={handleMonedaDeChange}
-                        onCantidadCambiada={handleCantidadCambiada} />
-                    <ConvertirA
-                        onMonedaASeleccionada={handleMonedaAChange}
-                        onCantidadCambiada={handleCantidadCambiada} />
-                    <Monedas monedaDe={monedaDe} monedaA={monedaA} cantidad={cantidad} />
+                <div id='containerBody'>
+                    <><div className='containerConversor'>
+                        <ConvertirDe
+                            onMonedaDeSeleccionada={handleMonedaDeChange}
+                            onCantidadCambiada={handleCantidadCambiada} />
+                        <ConvertirA
+                            onMonedaASeleccionada={handleMonedaAChange}
+                            onCantidadCambiada={handleCantidadCambiada} />
+                        <Monedas monedaDe={monedaDe} monedaA={monedaA} cantidad={cantidad} />
+                    </div>
+                    <div id='containerTransferenciasImg'>
+                        <img src="./fotos/credito.png" alt=""></img>
+                    </div></>
                 </div>
-                <div id='containerTransferenciasImg'>
-                    <img src="./fotos/credito.png" alt=""></img>
-                </div></>
             </div>
     )
 }

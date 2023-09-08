@@ -1,4 +1,4 @@
-import './index.css';
+import './cuentas.css';
 import Box from '../componentes/box/Box.js';
 import Header from '../componentes/header/Header';
 
@@ -14,6 +14,8 @@ function Cuentas() {
       <br />
       <div className='cuentasText'>
         <h2>Hola, Matias Victor Saguir </h2>
+      </div>
+      <div className='tusCuentas'>
         <h2>Tus Cuentas</h2>
       </div>
       <input type="button" name="button" defaultValue="Más opciones" />
@@ -21,7 +23,7 @@ function Cuentas() {
         <section className="accountsSection">
           <div className="accountCard">
             <div className="accountCardText">
-              <h2>Cuenta de Ahorros</h2>
+              <h3>Cuenta de Ahorros</h3>
               <p>Número de Cuenta: XXXX-XXXX-XXXX-1234</p>
               <p>Saldo Actual: $500,000</p>
               <a href="#" className="action-button">
